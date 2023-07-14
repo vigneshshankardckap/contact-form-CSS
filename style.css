@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(106, 154, 196, 255)
+}
+
+
+h2 {
+
+    margin-left: 130px;
+    color: white;
+    margin-top: 60px;
+    font-size: 45px;
+    font-family: sans-serif;
+}
+
+img {
+    height: 30px;
+    margin-left: 15px;
+
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+.contact-box {
+    display: flex;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.contact-links {
+    width: 500px;
+    background-color: #1F2E43;
+
+
+}
+
+.contact-form-wrapper {
+    width: 500px;
+    background-color: #BED3E5
+}
+
+
+.form-item{
+    margin-top: 40px;
+}
+input{
+    height: 40px;
+    width: 360px;
+    border-radius: 5px;
+    border:none;
+}
+textarea{
+    height: 50px;
+    width: 360px;
+    border-radius: 5px;
+    border: none;
+
+}
+form{
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+button{
+    border: none;
+    margin-top: 30px;
+    margin-left: 150px;
+    height: 35px;
+    width: 73px;
+    border-radius: 5px;
+    background-color: #1F2E43 ;
+    color: white;
+    font-size: 18px;
+}
+.form-item{
+    position: relative;
+}
+
+label{
+    position: absolute;
+    color: gray;
+    left: 5px;
+}
+
+input:focus+label{
+    position: relative;
+    top: -32px;
+    left: -358px;
+    right: 533px;
+}
+textarea:focus+.message{
+    position: absolute;
+    color: gray;
+    left: 5px;
+    bottom: 55px;
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-left: 130px;
+}
+.contact-links{
+  padding-bottom:100px; 
+  padding-top: 50px;
+
+}
+form{
+    margin-left: 70px;
+}
+}
